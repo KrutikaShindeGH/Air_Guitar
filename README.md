@@ -3,9 +3,9 @@ Control MIDI guitar strings in real-time using hand gestures captured from your 
 
 # How It Works 🧭:
 - The webcam detects your hands in real-time using cvzone’s HandDetector.
-- Each finger corresponds to a specific chord (left and right hands are mapped identically).
-- When a finger is raised (fingersUp), a chord is played.
-- When the finger is lowered, the chord sustains for a short delay before stopping.
+- Each finger corresponds to a specific string (left and right hands are mapped identically).
+- When a finger is raised (fingersUp), a string is played.
+- When the finger is lowered, the string sustains for a short delay before stopping.
 
 # Chord Mapping (D Major Scale) 🎵:
 
@@ -71,7 +71,7 @@ Control MIDI guitar strings in real-time using hand gestures captured from your 
 - cvzone.HandTrackingModule.HandDetector handles hand and finger tracking.
 - fingersUp() determines which fingers are raised.
 - MIDI notes are triggered with note_on and note_off functions.
-- Chords are sustained for a configurable delay (SUSTAIN_TIME = 2.0).
+- Strings are sustained for a configurable delay (SUSTAIN_TIME = 2.0).
 
 
 
